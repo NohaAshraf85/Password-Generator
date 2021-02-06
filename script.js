@@ -10,41 +10,58 @@ function writePassword() {
 
 }
 
-// Prompts to chose the password criteria
- var charactersArray = "abcdefghijklmnopqrstuvwxyz";
+// Password criteria arrays
+  var charactersArray = "abcdefghijklmnopqrstuvwxyz";
   var numericArray = "0123456789";
   var specialCharactersArray = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   var upperCaseArray = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var characterArraysChosenbyUser="";
-function generatePassword(){
+  var characterArraysChosenbyUser="";
+
+  // Function and prompts to generate the password
+
+  function generatePassword(){
   
-  do
-  {
-   var passwordLength = prompt ("Password length, pick a number from 8 to 128")
-  }
-  while(!(passwordLength>8 && passwordLength<128));
-  var upperCaseCharacter = confirm ("Do you want uppercase characters? Yes/No")
-  var lowerCaseCharacter = confirm ("Do you want lowercase characters? Yes/No")
-  var numeric = confirm ("Do you want a number in your password? Yes/No")
-  var specialCharacters = confirm ("Do you want a special character in your password? Yes/No")
-if(upperCaseCharacter ==true)
+  // do
+  // {
+   var passwordLength = prompt ("Password length, pick a number from 8 to 128");
+   if ((passwordLength > 8 && passwordLength < 128) === false){
+
+    alert("Please enter the correct password length, choose a number not less than 8 or more than 128");
+    return "";
+   }
+  // }
+  // while(!(passwordLength>8 && passwordLength<128));
+  var upperCaseCharacter = confirm ("Do you want uppercase characters? Yes/No");
+  var lowerCaseCharacter = confirm ("Do you want lowercase characters? Yes/No");
+  var numeric = confirm ("Do you want a number in your password? Yes/No");
+  var specialCharacters = confirm ("Do you want a special character in your password? Yes/No");
+ 
+ if (upperCaseCharacter === false && lowerCaseCharacter === false && numeric === false && specialCharacters === false ){
+   alert("You must chose at least 1 uppercase or 1 lowercase or 1 numeric value or 1 special character");
+   return "";
+ }
+ 
+  if(upperCaseCharacter ===true)
 {
-  characterArraysChosenbyUser=characterArraysChosenbyUser + upperCaseArray;
+  characterArraysChosenbyUser = characterArraysChosenbyUser + upperCaseArray;
 
 }
-if(lowerCaseCharacter ==true)
+
+if(lowerCaseCharacter ===true)
 {
-  characterArraysChosenbyUser= characterArraysChosenbyUser +  charactersArray;
+  characterArraysChosenbyUser = characterArraysChosenbyUser +  charactersArray;
 
 }
-if(numeric==true)
+
+if(numeric===true)
 {
   characterArraysChosenbyUser = characterArraysChosenbyUser + numericArray;
 
 }
-if(specialCharacters==true)
+
+if(specialCharacters===true)
 {
-  characterArraysChosenbyUser=characterArraysChosenbyUser + specialCharactersArray;
+  characterArraysChosenbyUser = characterArraysChosenbyUser + specialCharactersArray;
 
 }
   // console logging the above variables
