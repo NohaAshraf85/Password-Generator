@@ -28,7 +28,7 @@ This password generator is intended to provide the user with a strong password t
 
     # How it looks like:
     ## Homepage:
-    ![Homepage] (./Assets/images/Homepage.jpg)
+    ![Homepage](./Assets/images/Homepage.jpg)
 
 
     
