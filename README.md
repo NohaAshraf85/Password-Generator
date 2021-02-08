@@ -2,10 +2,10 @@
 
 This password generator was created as a part of my first attempt on javascript.
 
-#Technologies Used:
-1. HTML: to create the skeleton of the application
-2. CSS: to style it
-3. Javascript: to make the application come to live and do what it was intended to
+# Technologies Used:
+1. HTML: to create the skeleton of the application (was provided by UCONN)
+2. CSS: to style it (was provided by UCONN)
+3. Javascript: to make the application come to live and do what it was intended to (Started Code was provided by UCONN)
 
 # Project Objective:
 This password generator is intended to provide the user with a strong password that includes:
@@ -26,5 +26,9 @@ This password generator is intended to provide the user with a strong password t
         * In case the user rejected all the above (pressed cancel) criteria, the user is presented with the following alert **(You must chose at least 1 uppercase or 1 lowercase or 1 numeric value or 1 special character)**
     * The user has to press on the GEnerate Password button again to repeat the whole cycle, upon meeting all the criteria, the password is then created.
 
-    
+    # How it looks like:
+    ## Homepage:
+    ![Homepage] (./assets/images/Homepage.jpg)
+
+
     
