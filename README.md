@@ -30,5 +30,29 @@ This password generator is intended to provide the user with a strong password t
     ## Homepage:
     ![Homepage](./Assets/images/Homepage.jpg)
 
+    ## Password Length:
+    ![Password Length](./Assets/images/passwordLengthAlert1.jpg)
+
+    ## Alert to chose correct password length:
+    ![PassowrdLengthAlert](./Assets/images/alertToChooseRightPassLength.jpg)
+
+    ## Include Uppercase:
+    ![IncludeUpperCAse](./Assets/images/confirmUpperCase.jpg)
+
+    ## Include Lowercase:
+    ![IncludeLowerCase](./Assets/images/ConfirmLowerCase.jpg)
+
+    ## Include Number:
+    ![IncludeNumber](./Assets/images/confirmNumber.jpg)
+    
+    ## Include Special Character:
+    ![IncludeSpecialCharacter](./Assets/images/confirmSpecialCharacter.jpg)
+
+    ## Alert in case the user did not choose (uppercase, lowercase,number and/or special character):
+    ![alertToPickOneCriteria](./Assets/images/haveToChoseOne.jpg)
+
+    ## Generated Password:
+    ![GeneratedPassword](./Assets/images/generatedPassword.jpg)
+
 
     
